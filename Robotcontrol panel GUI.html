@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 25px;
+  background: #0415aa;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #a504aa;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1> Range Slider</h1>
+
+
+
+
+
+
+<div class="slidecontainer">
+
+<form action ="task1.php" method="post">
+
+
+<h3>motor1:</h3>
+
+
+  <input type="range" min="0" max="180" value="" class="slider" id="Range1">
+  <p>value: <span id="demo1"></span></p>
+  
+  </div>
+  
+  
+  <script>
+
+var slider1 = document.getElementById("Range1");
+var output1 = document.getElementById("demo1");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+</script>
+
+
+  
+  
+  
+  
+  
+  
+  
+ <div class="slidecontainer">
+ 
+  <h3>motor2:</h3>
+
+
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range2">
+  <p>value:<span id="demo2"></span></p>
+ </div> 
+
+
+ <script>
+
+var slider2 = document.getElementById("Range2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+</script>
+
+
+
+
+ <div class="slidecontainer">
+
+  
+ 
+  
+  
+ <h3>motor3:</h3>
+
+
+  <input type="range" min="0" max="180" value="" class="slider" id="Range3">
+  <p>value: <span id="demo3"></span></p>
+   
+  
+  <script>
+
+var slider3 = document.getElementById("Range3");
+var output3 = document.getElementById("demo3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+</script> 
+
+
+
+<h3>motor4:</h3>
+
+
+  <input type="range" min="0" max="180" value="" class="slider" id="Range4">
+  <p>value: <span id="demo4"></span></p>
+   
+  
+  <script>
+
+var slider4 = document.getElementById("Range4");
+var output4 = document.getElementById("demo4");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+</script> 
+  
+
+
+<h3>motor5:</h3>
+
+
+  <input type="range" min="0" max="180" value="" class="slider" id="Range5">
+  <p>value: <span id="demo5"></span></p>
+   
+  
+  <script>
+
+var slider5 = document.getElementById("Range5");
+var output5 = document.getElementById("demo5");
+output5.innerHTML = slider5.value;
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+</script> 
+  
+
+
+
+<h3>motor6:</h3>
+
+
+  <input type="range" min="0" max="180" value="" class="slider" id="Range6">
+  <p>value: <span id="demo6"></span></p>
+   
+  
+  <script>
+
+var slider6 = document.getElementById("Range6");
+var output6 = document.getElementById("demo6");
+output6.innerHTML = slider6.value;
+
+slider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+</script> 
+   
+  
+</div>
+
+<button class="buttonSave"> save</button>
+<button class="buttonrun" >run</button>
+
+
+
+
+</body>
+</html>
