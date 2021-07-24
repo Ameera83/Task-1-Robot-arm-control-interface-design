@@ -1,4 +1,4 @@
-# am_27am
+#Robot arem GUI
 task1:Robot arem GUI:
 The first task is to design an interface to control the robot arm.
 I used code (CSS, JAVA, HTML) for the interface. The code was written using the Visual Studio Code program.
